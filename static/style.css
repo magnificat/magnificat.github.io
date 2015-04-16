@@ -1,12 +1,23 @@
 html {
-  font-size: 17pt;
+  font-size: 16pt;
 }
 
 pre {
   font-family: "luxi mono", monospace;
 }
 
-@page {
-  margin: 2cm;
-  margin-left: 4cm;
+body {
+  margin: 4em;
+}
+
+
+@media print {
+  body {
+    margin: 0
+  }
+
+  @page {
+    margin: 2cm;
+    margin-left: 3cm;
+  }
 }
