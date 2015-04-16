@@ -1,16 +1,19 @@
 [submodule "raw/przybadz-plomieniu"]
 	path = raw/przybadz-plomieniu
-	url = git@github.com:magnificat/przybadz-plomieniu
+	url = https://github.com/magnificat/przybadz-plomieniu
 	branch = master
+
 [submodule "raw/cala-ziemio-wolaj"]
 	path = raw/cala-ziemio-wolaj
-	url = git@github.com:magnificat/cala-ziemio-wolaj
+	url = https://github.com/magnificat/cala-ziemio-wolaj
 	branch = master
+
 [submodule "raw/zwyciezca-smierci"]
 	path = raw/zwyciezca-smierci
-	url = git@github.com:magnificat/zwyciezca-smierci
+	url = https://github.com/magnificat/zwyciezca-smierci
 	branch = master
+
 [submodule "raw/hosanna"]
 	path = raw/hosanna
-	url = git@github.com:magnificat/hosanna
+	url = https://github.com/magnificat/hosanna
 	branch = master
