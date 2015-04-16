@@ -1,0 +1,11 @@
+html {
+  font-size: 16pt;
+}
+
+pre {
+  font-family: "luxi mono", monospace;
+}
+
+@page {
+  margin: 3cm;
+}
