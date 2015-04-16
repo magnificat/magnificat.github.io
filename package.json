@@ -1,0 +1,11 @@
+{ "name": "magnificat"
+, "version": "0.0.0"
+, "private": true
+, "dependencies":
+  { "del": "1.1.1"
+  , "fold-to-ascii": "2.0.1"
+  , "gulp": "3.8.11"
+  , "gulp-wrapper": "0.1.5"
+  , "gulp-simple-rename": "0.1.3"
+  }
+}
