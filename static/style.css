@@ -1,5 +1,5 @@
 html {
-  font-size: 16pt;
+  font-size: 17pt;
 }
 
 pre {
@@ -7,5 +7,6 @@ pre {
 }
 
 @page {
-  margin: 3cm;
+  margin: 2cm;
+  margin-left: 4cm;
 }
