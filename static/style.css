@@ -4,6 +4,7 @@ html {
 
 pre {
   font-family: "luxi mono", monospace;
+  white-space: pre-wrap;
 }
 
 body {
