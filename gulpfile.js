@@ -1,6 +1,7 @@
 var fs = require('fs');
 var fold = require('fold-to-ascii').fold;
 var del = require('del');
+var path = require('path');
 
 var gulp = require('gulp');
 var wrapper = require('gulp-wrapper');
@@ -21,8 +22,9 @@ gulp.task('html', ['html:clean'], function () {
     }))
     .pipe(rename(function (relativePath) {
       return fold(relativePath
+        .split(path.sep).pop()
         .toLowerCase()
-        .replace(/(\/)\d+\.\s*(?!\/)/, '$1')
+        .replace(/^\d+\.\s*(?!\/)/, '')
         .replace(/\s+/g, '-')
         .replace(/\s*\.ditty$/, '/index.html')
       );
