@@ -1,19 +1,19 @@
-[submodule "raw/przybadz-plomieniu"]
-	path = raw/przybadz-plomieniu
-	url = https://github.com/magnificat/przybadz-plomieniu
+[submodule "raw/do-ducha"]
+	path = raw/do-ducha
+	url = https://github.com/magnificat/do-ducha
 	branch = master
 
-[submodule "raw/cala-ziemio-wolaj"]
-	path = raw/cala-ziemio-wolaj
-	url = https://github.com/magnificat/cala-ziemio-wolaj
+[submodule "raw/uwielbieniowe"]
+	path = raw/uwielbieniowe
+	url = https://github.com/magnificat/uwielbieniowe
 	branch = master
 
-[submodule "raw/zwyciezca-smierci"]
-	path = raw/zwyciezca-smierci
-	url = https://github.com/magnificat/zwyciezca-smierci
+[submodule "raw/wielkanocne"]
+	path = raw/wielkanocne
+	url = https://github.com/magnificat/wielkanocne
 	branch = master
 
-[submodule "raw/hosanna"]
-	path = raw/hosanna
-	url = https://github.com/magnificat/hosanna
+[submodule "raw/kanony"]
+	path = raw/kanony
+	url = https://github.com/magnificat/kanony
 	branch = master
