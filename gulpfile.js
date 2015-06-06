@@ -29,10 +29,20 @@ gulp.task('html', ['html:clean'], function () {
         .replace(/\s*\.ditty$/, '/index.html')
       );
     }))
-    .pipe(gulp.dest('pl'))
+    .pipe(gulp.dest('.'))
   ;
 });
 
 gulp.task('html:clean', function (done) {
-  del('pl', done);
+  del([
+    '!build/*',
+    '!raw/*',
+    '!static/*',
+    '!node_modules/*',
+    '!.gitignore',
+    '!.gitmodules',
+    '!README.md',
+    '!gulpfile.js',
+    '!package.json',
+  ], done);
 });
