@@ -1,19 +1,19 @@
 [submodule "raw/do-ducha"]
 	path = raw/do-ducha
-	url = git+ssh://github.com:3333/magnificat/do-ducha
+	url = https://github.com/magnificat/do-ducha
 	branch = master
 
 [submodule "raw/uwielbieniowe"]
 	path = raw/uwielbieniowe
-	url = git+ssh://github.com:3333/magnificat/uwielbieniowe
+	url = https://github.com/magnificat/uwielbieniowe
 	branch = master
 
 [submodule "raw/wielkanocne"]
 	path = raw/wielkanocne
-	url = git+ssh://github.com:3333/magnificat/wielkanocne
+	url = https://github.com/magnificat/wielkanocne
 	branch = master
 
 [submodule "raw/kanony"]
 	path = raw/kanony
-	url = git+ssh://github.com:3333/magnificat/kanony
+	url = https://github.com/magnificat/kanony
 	branch = master
