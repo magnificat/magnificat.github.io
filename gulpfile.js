@@ -29,7 +29,7 @@ gulp.task('html', ['html:clean'], function () {
         .replace(/\s*\.ditty$/, '/index.html')
       );
     }))
-    .pipe(gulp.dest('pl'))
+    .pipe(gulp.dest('.'))
   ;
 });
 
