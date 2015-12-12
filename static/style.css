@@ -8,7 +8,8 @@ pre {
 }
 
 body {
-  padding: 3vh 3vw;
+  padding: 8vh 5vw;
+  margin: 0;
 }
 
 
@@ -18,7 +19,7 @@ body {
   }
 
   body {
-    margin: 0
+    padding: 0;
   }
 
   @page {
