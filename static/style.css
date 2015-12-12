@@ -1,5 +1,5 @@
 html {
-  font-size: 15pt;
+  font-size: 18px;
 }
 
 pre {
@@ -8,11 +8,15 @@ pre {
 }
 
 body {
-  margin: 4em;
+  padding: 3vh 3vw;
 }
 
 
 @media print {
+  html {
+    font-size: 15pt;
+  }
+
   body {
     margin: 0
   }
