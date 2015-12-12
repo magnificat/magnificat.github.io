@@ -1,11 +1,10 @@
 var fs = require('fs');
-var fold = require('fold-to-ascii').fold;
 var del = require('del');
-var path = require('path');
 
 var gulp = require('gulp');
 var wrapper = require('gulp-wrapper');
 var rename = require('gulp-simple-rename');
+var slugify = require('./build/slugify.js')
 
 function fileContents (path) {
   return fs.readFileSync(path, {encoding: 'utf-8'});
@@ -20,15 +19,7 @@ gulp.task('html', ['html:clean'], function () {
       header: fileContents('build/header.html'),
       footer: fileContents('build/footer.html'),
     }))
-    .pipe(rename(function (relativePath) {
-      return fold(relativePath
-        .split(path.sep).pop()
-        .toLowerCase()
-        .replace(/^\d+\.\s*(?!\/)/, '')
-        .replace(/\s+/g, '-')
-        .replace(/\s*\.ditty$/, '/index.html')
-      );
-    }))
+    .pipe(rename(slugify))
     .pipe(gulp.dest('.'))
   ;
 });
