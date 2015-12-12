@@ -1,18 +1,23 @@
-{ "name": "magnificat"
-, "version": "0.0.0"
-, "private": true
-
-, "dependencies":
-  { "gulp": "3.8.11"
-  , "husky": "0.8.1"
-
-  , "del": "1.1.1"
-  , "fold-to-ascii": "2.0.1"
-  , "gulp-wrapper": "0.1.5"
-  , "gulp-simple-rename": "0.1.3"
-  }
-
-, "scripts":
-  { "precommit": "gulp build && git add ."
+{
+  "name": "magnificat",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "gulp": "3.8.11",
+    "husky": "0.8.1",
+    "del": "1.1.1",
+    "fold-to-ascii": "2.0.1",
+    "gulp-wrapper": "0.1.5",
+    "gulp-simple-rename": "0.1.3"
+  },
+  "scripts": {
+    "precommit": "gulp build && npm run index && git add .",
+    "list-songs": "node -p \"const fs = require('fs'); const folders = fs.readdirSync('raw').reduce((listing, folder) => listing.concat(fs.readdirSync('raw/' + folder)), []).map(name => name.replace(/(?:\\d+\\. |\\.ditty)/g, '')); JSON.stringify(folders)\"",
+    "index": "npm run --silent list-songs | doxie --render --inject into index.html"
+  },
+  "devDependencies": {
+    "doxie": "^0.2.4",
+    "doxie.inject": "^0.1.1",
+    "doxie.render": "^0.3.2"
   }
 }
