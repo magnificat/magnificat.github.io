@@ -15,7 +15,7 @@ body {
 
 @media print {
   html {
-    font-size: 15pt;
+    font-size: 10.5pt;
   }
 
   body {
@@ -23,7 +23,7 @@ body {
   }
 
   @page {
-    margin: 2cm;
-    margin-left: 4cm;
+    margin: 1.5cm;
+    margin-left: 3cm;
   }
 }
