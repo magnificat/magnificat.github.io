@@ -6,6 +6,7 @@ module.exports = function (relativePath) {
     .split(path.sep).pop()
     .toLowerCase()
     .replace(/^\d+\.\s*(?!\/)/, '')
+    .replace(/,/g, '')
     .replace(/\s+/g, '-')
     .replace(/\s*\.ditty$/, '/index.html')
   );
