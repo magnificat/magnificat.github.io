@@ -10,7 +10,7 @@ module.exports = function (relativePath) {
       .replace(/^\d+\.\s*(?!\/)/, "")
       .replace(/,/g, "")
       .replace(/\s+/g, "-")
-      .replace(/[\-–—(),.!]+/g, "-")
+      .replace(/[\-–—(),!]+/g, "-")
       .replace(/\s*\.ditty$/, "/index.html")
   );
 };
