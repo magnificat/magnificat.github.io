@@ -11,6 +11,7 @@ module.exports = function (relativePath) {
       .replace(/,/g, "")
       .replace(/\s+/g, "-")
       .replace(/[\-–—(),!]+/g, "-")
+      .replace(/\-$/g, "")
       .replace(/\s*\.ditty$/, "/index.html")
   );
 };
